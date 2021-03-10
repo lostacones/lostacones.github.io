@@ -4,11 +4,11 @@ import { HeroComponent } from './hero/hero.component';
 
 const routes: Routes = [
 
-  { path: '', component: HeroComponent },
+  { path: '/', component: HeroComponent },
 
-  { path: 'about', loadChildren: () => import('./about/about.module').then(m => m.AboutModule) },
+  { path: '/about', loadChildren: () => import('./about/about.module').then(m => m.AboutModule) },
 
-  { path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule) }
+  { path: '/contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule) }
 
 ];
 
